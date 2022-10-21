@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Icons/mini-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Google</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Quicksand";
+            sans-serif;
+            background-color: #202124;
+        }
+        button {
+            background: #303134;
+            color: #9aa0a6;
+            border: 1px solid #303134;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 4px;
+            font-size: 13px;
+            margin: 10px;
+            height: 36px;
+            min-width: 54px;
+        }
+        input {
+            margin-left: auto;
+            margin-right: auto;
+            background: #202124;
+            color: white;
+            border: 1px solid #5F6368;
+            border-radius: 24px;
+            height: 30px;
+            width: 584px;
+            padding: 6px;
+            margin-bottom: 12px;
+            text-indent: 6%;
+            align-items: center;
+        }
+        .side-bar {
+            box-sizing: border-box;
+            padding: 8px 16px 6px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            font-size: 14px;
+        }
+        .side-bar a{
+            text-decoration: none;
+            color: white;
+            margin-left: 16px;
+        }
+        .menu {
+            height: 16px;
+            width: 16px;
+            margin-left: 6px;
+            align-items: center;
+        }
+        .name {
+            height: 32px;
+            width: 32px;
+            margin-left: 6px;
+            border-radius: 50%;
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .googlelogo {
+            height: 92px;
+            aspect-ratio: 272 / 92;
+        }
+
+        .search-bar{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .search-bar input{
+            display: block;
+        }
+        .search-input:hover {
+            background: #303134;
+            border-color: #303134;
+            outline: none;
+        }
+        .search-input:focus {
+            background: #303134;
+            border-color: #303134;
+            outline: none;
+        }
+        .search-bar img {
+            position: absolute;
+            margin-left: 28%;
+            top: 11px;
+            left: 10px;
+            width: 24px;
+            height: 24px;
+        }
+        .search-bar img#micro {
+            position: absolute;
+            left: unset;
+            right: 10px;
+            margin-right: 28%;
+        }
+        .search-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .search-buttons button:hover {
+            border: 1px solid white;
+            cursor: pointer;
+        }
+        .english {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            color: #9aa0a6;
+            font-size: 14px;
+            padding-bottom: 9.7%;
+        }
+        .english a{
+            margin-top: 20px;
+            color: #8ab4f8;
+            text-decoration: none;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .english a:hover {
+            text-decoration: underline;
+        }
+        .subtitulo {
+            background: #171717;    
+            padding: 15px 30px;
+            border-bottom: 1px solid #3c4043;
+            font-size: 14px;
+            color: #9aa0a6;
+        }
+        .submenu {
+            background: #171717;    
+            padding: 15px 30px;
+            font-size: 14px;
+            color: #9aa0a6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+        .submenu a {
+            text-decoration: none;
+            color: #9aa0a6;
+            padding: 20px;
+        }
+        .submenu a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="side-bar">
+            <a href="https://mail.google.com/mail/?authuser=0&ogbl">Gmail</a>
+            <a href="https://www.google.com.mx/imghp?hl=es-419&authuser=0&ogbl">Imágenes</a>
+            <a href="">
+                <img src="./Icons/menu-de-puntos.png" alt="" class="menu">
+            </a>
+            <a href="">
+                <img src="./Icons/name.png" alt="" class="name">
+            </a>
+        </div>
+    </nav>
+
+    <div class="logo">
+       <h1>
+        <img src="./Icons/googlelogo.png" alt="" class="googlelogo">
+       </h1>
+    </div>
+
+    <div>
+        <div class="search-bar">
+            <input type="text" class="search-input"></input>
+            <img src="./Icons/magnifying-glass.png" alt="" id="magnifying-glass"/>
+            <img src="./Icons/mic.png" alt="" id="micro"/>
+        </div>
+            
+        <br>
+
+        <div class="search-buttons">
+            <button>Buscar con Google</button>
+            <button>Voy a tener suerte</button>
+        </div>
+    </div>
+
+    <div class="english">
+        <center>
+            Ofrecido por Google en: 
+            <a href="https://www.google.com/setprefs?sig=0_0AbHRP60uMeZPh98kx7NIQdpz_A%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjVvsWsqY76AhXxLkQIHerjDBYQ2ZgBCA4">English</a>
+        </center>
+    </div>
+
+    <div class="subtitulo">México</div>
+    <div class="submenu">
+        <div>
+            <a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a>
+            <a href="https://ads.google.com/intl/es-419_mx/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
+            <a href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/">Negocios</a>
+            <a href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a>
+        </div>
+        
+        <div>
+            <a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a>
+            <a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a>
+            <a href="">Preferencias</a>
+            <a href="https://www.flaticon.es/iconos-gratis/punto" title="punto iconos">Iconos</a>
+        </div>
+    </div>
+</body>
+</html>
